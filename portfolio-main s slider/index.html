@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@1&family=Kdam+Thmor+Pro&family=Montserrat:ital@1&family=Rajdhani:wght@500&family=Raleway:wght@200&family=Vujahday+Script&family=Work+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!--
+  <h1 class="vishnyakov" style="font-size:54px;">VISHNYAKOV</h1>
+  <div class="preloader">
+    <div class="p" style="font-size:32px;">LOADING</div>
+  </div>
+  -->
+  <div class="wrapper" id="home">
+  <div class="cursor"></div>
+  <div class="follower"></div>
+
+
+    <div class="text">
+        <p class="heading_num">01</p>
+        <div class="text__wrap content">
+          <h2 class="heading">WHO I AM?</h2>
+        </div>
+      </div>
+    <header class="header">
+            <div class="container">
+            <a href="#" class="header__logo">DV</a>
+                <p class="header__proff">Frontend-Developer</p>
+                    <nav class="header__menu">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>
+                            <li class="menu__item"><a href="#skills" class="menu__link">MY SKILLS</a></li>
+                            <li class="menu__item"><a href="#about " class="menu__link">ABOUT</a></li>
+                            <li class="menu__item"><a href="#bottom" class="menu__link">CONTACTS</a></li>
+                        </ul>
+                 </nav>
+                 <div class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                 </div>
+        </div>
+    </header>
+  <div class="header__logotip">
+    <div class="header__item">
+      <canvas id="canvasOne" width="900" height="520">
+        Your browser does not support HTML5 canvas.
+      </canvas>
+    </div>
+  </div>
+
+    <section class="observe hero">
+        <div class="container">
+            <h1 class="hero__title"><span>Hello,</span> <br> I'm Denis.<br>Frontend Developer</h1>
+            <a href="#skills" class="link">
+              <img src="img/icons/down.png" alt="" width="24px" height="24px">
+            </a>
+        </div>
+    </section>
+
+    <div id="skills" class="observe skill-set container">
+        <div class="text2">
+            <p class="heading_num2">02</p>
+            <div class="text__wrap content">
+              <h2 class="heading2">SKILL SET</h2>
+            </div>
+          </div>
+        <div class="content content--mlarge skill-set__flex">
+          <div class="slider">
+            <div class="first__slide">
+               <div class="slider__img">
+                 <img class ="slider__img" src="img/icons/html-5.png" alt="">
+               </div>
+                <div class="slider__text">
+                 <p><span style="color:#ffc400; font-weight:700">HTML </span>  (Hypertext  Markup Language) - стандартизированный язык гипертекстовой разметки  документов для просмотра веб-страниц в браузере.</p>
+                </div>
+               <p class="completed">Completed</p>
+               <div class="progress__bar p100" >100%</div>
+          </div>
+          <div class="first__slide">
+              <div class="slider__img">
+                <img class ="slider__img" src="/img/icons/css.png" alt="">
+              </div>
+                <div class="slider__text">
+                  <p><span style="color:#0004ff; font-weight:700">CSS</span> — формальный   язык    описания внешнего вида документа (веб-страницы), написанного с  использованием   языка разметки (чаще всего HTML или XHTML).</p>
+                </div>
+              <p class="completed">Completed</p>
+            <div class="progress__bar p90"></div>
+          </div>
+          <div class="first__slide">
+            <div class="slider__img">
+              <img class ="slider__img" src="img/icons/javascript-logo.svg" alt="">
+            </div>
+              <div class="slider__text">
+                <p><span style="color:#FFB800; font-weight:700">JavaScript </span>-   используется для того, чтобы делать страницы интерактивными, то есть дать   пользователю возможность взаимодействовать с элементами.</p>
+              </div>
+            <p class="started">Started</p>
+            <div class="bar__container">
+              <div class="progress__bar p100">100%</div>
+            </div>
+        </div>
+          <div class="first__slide">
+            <div class="slider__img">
+              <img class ="slider__img" src="img/icons/react.png" alt="">
+            </div>
+              <div class="slider__text">
+                <p><span style="color:#0062ff; font-weight:700">React</span> — может использоваться для разработки одностраничных и мобильных приложений. Его цель — предоставить высокую скорость разработки, простоту и масштабируемость.</p>
+              </div>
+            <p class="notstarted">Not Started</p>
+          <div class="progress__bar p90"></div>
+        </div>
+
+            <a class="previous" onclick="previousSlide()"><img src="img/icons/left-arrow-svgrepo-com.svg" alt="" width="50px" height="50px"></a>
+            <a class="next" onclick="nextSlide()"><img src="./img/icons/left-arrow-svgrepo-com.svg" alt="" width="50px" height="50px"></a>
+
+        </div>
+      </div>
+    </div>
+
+<!--
+<section class="works">
+  <div class="container works__container">
+    <h2 class="works__title"> My Works</h2>
+    <div class="works__body">
+      <div class="works__card card">
+        <div class="card_img">
+          <img src="" alt="">
+        </div>
+        <div class="card__info">
+          <span class="card__tag">Real estate Template</span>
+          <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore optio, minus, impedit incidunt.</div>
+          <div class="card__category">Website Design</div>
+          <a href="" class="card__button">View work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<section id="about" class="observe about">
+  <div class="text3">
+    <div class="text__wrap content">
+      <p class="heading_num3">03</p>
+      <h2 class="heading3">ABOUT OF ME</h2>
+    </div>
+  </div>
+  <div class="container about__container">
+    <div class="about__text">
+      <h2 class="about__title">A bit about me</h2>
+    <div class="about__text"><span>My name is Denis Vishnyakov, I am a frontend developer.</span> I have been doing this for about 6 months, I study something new every day, soon I will reach great heights</div>
+    </div>
+              <div class="about__gallery">
+                <div class="about__img">
+                  <img class="cartinka" src="img/11.jpg" alt="" width="310px" height="325px">
+                </div>
+                <div class="about__img">
+                  <img class="cartinka" src="img/22.jpg" alt=""width="310px" height="325px">
+                </div>
+                <div class="about__img">
+                  <img class="cartinka" src="img/33.jpg" alt=""width="310px" height="325px">
+                </div>
+              </div>
+  </div>
+</section>
+ 
+
+<footer class="observe footer" id="footer" >
+  <div class="container footer__container" id="bottom">
+    <div class="text4">
+      <p class="heading_num4">04</p>
+      <div class="text__wrap content">
+        <h2 class="heading4">CONTACTS</h2>
+      </div>
+    </div>
+    <h3 class="footer__title"><span>Contact</span> with Me.</h3>
+    <span class="footer__subtitle">Свяжитесь со мной.</span>
+    <div class="footer__socials">
+        <div class="footer__social">
+          <a href="https://github.com/pataybob" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.374 0 0 5.373 0 12C0 17.302 3.438 21.8 8.207 23.387C8.806 23.498 9 23.126 9 22.81V20.576C5.662 21.302 4.967 19.16 4.967 19.16C4.421 17.773 3.634 17.404 3.634 17.404C2.545 16.659 3.717 16.675 3.717 16.675C4.922 16.759 5.556 17.912 5.556 17.912C6.626 19.746 8.363 19.216 9.048 18.909C9.155 18.134 9.466 17.604 9.81 17.305C7.145 17 4.343 15.971 4.343 11.374C4.343 10.063 4.812 8.993 5.579 8.153C5.455 7.85 5.044 6.629 5.696 4.977C5.696 4.977 6.704 4.655 8.997 6.207C9.954 5.941 10.98 5.808 12 5.803C13.02 5.808 14.047 5.941 15.006 6.207C17.297 4.655 18.303 4.977 18.303 4.977C18.956 6.63 18.545 7.851 18.421 8.153C19.191 8.993 19.656 10.064 19.656 11.374C19.656 15.983 16.849 16.998 14.177 17.295C14.607 17.667 15 18.397 15 19.517V22.81C15 23.129 15.192 23.504 15.801 23.386C20.566 21.797 24 17.3 24 12C24 5.373 18.627 0 12 0Z" />
+            </svg>
+          </a>
+        </div>
+          <div class="footer__social">
+            <a href="https://instagram.com/pataydod?igshid=YmMyMTA2M2Y=" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.829 6.302C14.091 6.268 13.869 6.262 12 6.262C10.131 6.262 9.91 6.269 9.172 6.302C7.273 6.389 6.389 7.288 6.302 9.172C6.269 9.91 6.261 10.131 6.261 12C6.261 13.869 6.269 14.09 6.302 14.829C6.389 16.708 7.269 17.612 9.172 17.699C9.909 17.732 10.131 17.74 12 17.74C13.87 17.74 14.091 17.733 14.829 17.699C16.728 17.613 17.611 16.711 17.699 14.829C17.732 14.091 17.739 13.869 17.739 12C17.739 10.131 17.732 9.91 17.699 9.172C17.611 7.289 16.726 6.389 14.829 6.302ZM12 15.595C10.015 15.595 8.405 13.986 8.405 12C8.405 10.015 10.015 8.406 12 8.406C13.985 8.406 15.595 10.015 15.595 12C15.595 13.985 13.985 15.595 12 15.595ZM15.737 9.104C15.273 9.104 14.897 8.728 14.897 8.264C14.897 7.8 15.273 7.424 15.737 7.424C16.201 7.424 16.577 7.8 16.577 8.264C16.577 8.727 16.201 9.104 15.737 9.104ZM14.333 12C14.333 13.289 13.288 14.333 12 14.333C10.712 14.333 9.667 13.289 9.667 12C9.667 10.711 10.712 9.667 12 9.667C13.288 9.667 14.333 10.711 14.333 12ZM12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.958 14.886C18.843 17.431 17.426 18.841 14.887 18.958C14.14 18.992 13.901 19 12 19C10.099 19 9.861 18.992 9.114 18.958C6.57 18.841 5.159 17.429 5.042 14.886C5.008 14.14 5 13.901 5 12C5 10.099 5.008 9.861 5.042 9.114C5.159 6.57 6.571 5.159 9.114 5.043C9.861 5.008 10.099 5 12 5C13.901 5 14.14 5.008 14.887 5.043C17.432 5.16 18.844 6.575 18.958 9.114C18.992 9.861 19 10.099 19 12C19 13.901 18.992 14.14 18.958 14.886Z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__social">
+            <a href="mailto:Vishka2005@yandex.ru">
+            <svg width="24" height="24" viewBox="0 0 229 228" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44.7174 45.6616H195.652C209.891 45.6616 217.068 52.3825 217.068 66.052V161.967C217.068 175.522 209.891 182.357 195.652 182.357H44.7174C30.4783 182.357 23.3018 175.522 23.3018 161.967V66.052C23.3018 52.3825 30.4783 45.6616 44.7174 45.6616ZM120.128 143.627L196.905 80.6329C199.639 78.3546 201.803 73.1146 198.386 68.4442C195.083 63.7738 189.045 63.6599 185.058 66.5077L120.128 110.478L55.3113 66.5077C51.3243 63.6599 45.287 63.7738 41.9835 68.4442C38.5661 73.1146 40.7304 78.3546 43.4643 80.6329L120.128 143.627Z" />
+              </svg>
+              </a>
+        </div>
+        <div class="footer__copyright">© Denis Vishnyakov  <br><span>June 2022</span></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</div>
+<!--
+<script type="text/javascript">
+  paceOptions = {
+    ajax: true;
+    document:true;
+    eventLag:false
+  };
+  Pace.on('done', function(){
+    $('.p'.delay(500).animate({top:'300',opacity:'0',3000}))
+  })
+
+</script>
+-->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/canvas.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/slider.js"></script>
+
+
+</body>
+</html>
